@@ -1,4 +1,5 @@
 import 'package:cardapio_app/src/models/item_model.dart';
+import 'package:cardapio_app/src/pages/home/components/teste.dart';
 import 'package:cardapio_app/src/pages/product/product_screen.dart';
 import 'package:cardapio_app/src/utils/colors.dart';
 import 'package:flutter/cupertino.dart';
@@ -17,7 +18,7 @@ class ItemLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        Navigator.push(context, (MaterialPageRoute(builder: (c) => ProductScreen(item: item))));
+        Navigator.push(context, (MaterialPageRoute(builder: (c) => Teste(item: item))));
       },
             child: Container(
         width: MediaQuery.of(context).size.width * 0.9,
