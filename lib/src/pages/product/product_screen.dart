@@ -23,11 +23,12 @@ class ProductScreen extends StatelessWidget {
               )
             ],
           ),
-          // Cor do fundo do container
           padding: EdgeInsets.symmetric(vertical: 10),
           child: FixedButtonContainer()
         ),
         appBar: AppBar(
+leading: IconButton(onPressed: (){}, icon: icon),
+        backgroundColor: Colors.transparent,
           title: Text('Cake & Co.',
               style: TextStyle(
                   fontFamily: 'Cocogoose',
@@ -104,3 +105,4 @@ class FixedButtonContainer extends StatelessWidget {
     );
   }
 }
+Icons.arrow_back_ios_new_rounded, color: AppColors.fuchsia
