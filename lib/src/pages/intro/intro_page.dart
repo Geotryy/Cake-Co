@@ -7,6 +7,7 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
@@ -17,6 +18,7 @@ class IntroPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: size.height * 0.04,),
                 Text(
                   "Cake & Co.",
                   style: TextStyle(
@@ -24,8 +26,8 @@ class IntroPage extends StatelessWidget {
                       color: AppColors.fuchsia,
                       fontFamily: 'Cocogoose'),
                 ),
-                Center(child: Text('Doces Delícias', style: TextStyle(color: AppColors.black, fontSize: 25, fontWeight: FontWeight.w500),)),
-                SizedBox(height: 100,),
+                Center(child: Text('Doces Delícias', style: TextStyle(color: AppColors.black, fontSize: 25, fontWeight: FontWeight.w600),)),
+                SizedBox(height: size.height * 0.09,),
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(200),bottomRight: Radius.circular(200), topLeft: Radius.circular(200), ),
@@ -34,11 +36,11 @@ class IntroPage extends StatelessWidget {
                   padding: EdgeInsets.all(15),
                   child: Image.asset(
                     "assets/images/logo.png",
-                    width: MediaQuery.of(context).size.width * 0.8,
+                    width: size.width * 0.75,
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.1,
+                  height: MediaQuery.of(context).size.height * 0.09,
                 ),
                 Container(
                   decoration: BoxDecoration(),
