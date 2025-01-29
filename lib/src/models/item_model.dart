@@ -1,4 +1,4 @@
-class itemModel{
+class ItemModel{
 String itemName;
 String imgUrl;
 String unit;
@@ -8,7 +8,7 @@ String description;
 List<String>? restricoes;
 bool isFavorited;
 
-itemModel ({
+ItemModel ({
 required this.itemName,
 required this.imgUrl,
 required this.unit,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class BodyProductScreen extends StatelessWidget {
   const BodyProductScreen({super.key, required this.item});
-  final itemModel item;
+  final ItemModel item;
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +15,11 @@ class BodyProductScreen extends StatelessWidget {
         child: Column(children: [
           // IMAGEM DO ITEM
           Expanded(
-            child: Image.asset(
-              item.imgUrl,
+            child: Hero(
+              tag: item.imgUrl,
+              child: Image.asset(
+                item.imgUrl,
+              ),
             ),
           ),
 
@@ -33,8 +36,7 @@ class BodyProductScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-
-          // WIDGET PARA REPRESENTAR A ROLAGEM DA TELA 
+                  // WIDGET PARA REPRESENTAR A ROLAGEM DA TELA
                   Center(
                     child: Container(
                       width: 40,
@@ -48,7 +50,7 @@ class BodyProductScreen extends StatelessWidget {
                     height: size.height * 0.05,
                   ),
 
-          // NOME DO PRODUTO
+                  // NOME DO PRODUTO
                   Text(
                     item.itemName,
                     style: TextStyle(
@@ -57,7 +59,7 @@ class BodyProductScreen extends StatelessWidget {
                         fontWeight: FontWeight.w700),
                     maxLines: 2,
                   ),
-          // PREÇO DO PRODUTO
+                  // PREÇO DO PRODUTO
                   Text(
                     'R\$ ${item.price}',
                     style: TextStyle(
@@ -69,7 +71,7 @@ class BodyProductScreen extends StatelessWidget {
                   SizedBox(
                     height: size.height * 0.03,
                   ),
-          // DESCRIÇÃO DO PRODUTO
+                  // DESCRIÇÃO DO PRODUTO
                   Text(
                     item.description,
                     style: TextStyle(
@@ -81,7 +83,7 @@ class BodyProductScreen extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-          // PESO DO PRODUTO
+                  // PESO DO PRODUTO
                   Text(
                     "Peso: ${item.peso} ${item.unit}",
                     style: TextStyle(
@@ -91,7 +93,7 @@ class BodyProductScreen extends StatelessWidget {
                     maxLines: 6,
                   ),
                   SizedBox(height: size.height * 0.03),
-            // SEÇÃO DE RESTRIÇÕES
+                  // SEÇÃO DE RESTRIÇÕES
                   if (item.restricoes!.isNotEmpty) ...[
                     const Text(
                       "Restrições alimentares:",

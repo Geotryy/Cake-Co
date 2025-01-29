@@ -16,14 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // Índice da categoria selecionada
   int selectedCategoryIndex = 0;
 
-  // Lista de categorias
-  final List<String> categories = [
-    'Tudo',
-    'Bolos',
-    'Doces',
-    'Salgados',
-    'Bebidas'
-  ];
+  
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +59,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icon(Icons.search, color: Colors.white),
                     iconSize: 24,
                     onPressed: () {
-                      print("Pesquisa acionada");
                     },
                   ),
                 ),

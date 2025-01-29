@@ -1,5 +1,5 @@
 import 'package:cardapio_app/src/pages/home/home_screen.dart';
-import 'package:cardapio_app/src/pages/saved/favorited_screen.dart';
+import 'package:cardapio_app/src/pages/favorites/favorited_screen.dart';
 import 'package:cardapio_app/src/utils/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
