@@ -25,12 +25,9 @@ class ItemLayout extends StatelessWidget {
           //IMAGEM DO PRODUTO COM PADDING
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Hero(
-              tag: item.imgUrl,
-              child: Image.asset(
-                item.imgUrl,
-                width: MediaQuery.of(context).size.width * 0.5,
-              ),
+            child: Image.asset(
+              item.imgUrl,
+              width: MediaQuery.of(context).size.width * 0.5,
             ),
           ),
           //CONTAINER CONTENDO AS INFORMAÇÕES DO ITEM

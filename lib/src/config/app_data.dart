@@ -55,4 +55,4 @@ List<ItemModel> items = [boloBeijinho, boloBanoffe, bolo3, bolo5, bolo6];
 
 List<String> categories = ['Tudo', 'Bolos', 'Cookies', 'Docinhos'];
 
-List<ItemModel> favoritos = items.where((item) => item.isFavorited).toList();
+List<ItemModel> get favoritos => items.where((item) => item.isFavorited).toList();
