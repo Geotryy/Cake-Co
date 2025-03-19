@@ -1,4 +1,4 @@
-# cardapio_app
+# CAKE & CO.
 
 A new Flutter project.
 
