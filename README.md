@@ -1,16 +1,25 @@
-# CAKE & CO.
+🍰 Cake & Co. - App Flutter
 
-A new Flutter project.
+Bem-vindo ao Cake & Co., um aplicativo feito em Flutter para facilitar pedidos e gestão de confeitaria! 🎂✨
 
-## Getting Started
+📌 Sobre o Cake & Co.
 
-This project is a starting point for a Flutter application.
+O Cake & Co. é um app desenvolvido para tornar mais simples e intuitivo o processo de encomenda de bolos, tortas e doces. Com uma interface amigável, os usuários podem visualizar produtos, personalizar pedidos e acompanhar suas compras em tempo real.
 
-A few resources to get you started if this is your first Flutter project:
+🎯 Objetivo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Proporcionar uma experiência digital fluida e eficiente para clientes e confeitarias, facilitando pedidos e a gestão de produtos.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🛠️ Tecnologias Utilizadas
+
+Flutter (Dart)
+
+Firebase (Autenticação e Banco de Dados)
+
+Provider (Gerenciamento de Estado)
+
+API para pedidos e pagamentos
+
+🚀 Funcionalidades
+
+✔ Cadastro e login de usuários ✔ Catálogo de produtos ✔ Personalização de pedidos ✔ Acompanhamento de status ✔ Integração com métodos de pagamento ✔ Notificações sobre pedidos
